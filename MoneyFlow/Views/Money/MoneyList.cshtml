@@ -1,0 +1,17 @@
+﻿@model List<MoneyModel>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered table-hover">
+            @foreach (var money in Model)
+            {
+                <tr>
+                    <th>@Model.IndexOf(money)</th>
+                    <th>@money.Type</th>
+                    <th>@money.Date.ToString("yyyy-MM-dd")</th>
+                    <th>@money.Money.ToString("#,#")</th>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
