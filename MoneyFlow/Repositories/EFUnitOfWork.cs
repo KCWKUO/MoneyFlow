@@ -7,7 +7,7 @@ using System.Web;
 
 namespace MoneyFlow.Repositories
 {
-    public class EFUnitOfWork
+    public class EFUnitOfWork : IUnitOfWork
     {
         public DbContext Context { get; set; }
 

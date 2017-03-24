@@ -215,6 +215,7 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\IUnitOfWork.cs" />
     <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Services\AccountBookService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
