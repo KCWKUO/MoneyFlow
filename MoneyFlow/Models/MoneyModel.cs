@@ -10,5 +10,6 @@ namespace MoneyFlow.Models
         public string Type { get; set; }
         public DateTime Date { get; set; }
         public decimal Money { get; set; }
+        public string Remark { get; set; }
     }
 }

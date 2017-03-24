@@ -2,13 +2,21 @@
 <div class="row">
     <div class="col-md-12">
         <table class="table table-bordered table-hover">
+            <tr>
+                <th>#</th>
+                <th>類別</th>
+                <th>日期</th>
+                <th>金額</th>
+                <th>備註</th>
+            </tr>
             @foreach (var money in Model)
             {
                 <tr>
-                    <th>@Model.IndexOf(money)</th>
-                    <th>@money.Type</th>
-                    <th>@money.Date.ToString("yyyy-MM-dd")</th>
-                    <th>@money.Money.ToString("#,#")</th>
+                    <td>@Model.IndexOf(money)</td>
+                    <td>@money.Type</td>
+                    <td>@money.Date.ToString("yyyy-MM-dd")</td>
+                    <td>@money.Money.ToString("#,#")</td>
+                    <td>@money.Remark</td>
                 </tr>
             }
         </table>
