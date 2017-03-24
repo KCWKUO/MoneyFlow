@@ -5,10 +5,10 @@ namespace MoneyFlow.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class SkillTreeHomeworkEntries : DbContext
+    public partial class SkillTreeHomeworkEntities : DbContext
     {
-        public SkillTreeHomeworkEntries()
-            : base("name=SkillTreeHomeworkEntries")
+        public SkillTreeHomeworkEntities()
+            : base("name=SkillTreeHomeworkEntities")
         {
         }
 
